@@ -1,25 +1,23 @@
 import { useState, useEffect } from "react";
 
 const App = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    try {
+      const stored = localStorage.getItem("theme");
+      if (stored) return stored === "dark";
+      // no stored preference -> default to dark
+      return true;
+    } catch (e) {
+      return true;
+    }
+  });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check local storage or system preference on component mount
-    const storedTheme = localStorage.getItem("theme");
+    // Listen for system theme changes only when user hasn't chosen a theme.
     const userPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-    if (storedTheme) {
-      setIsDark(storedTheme === "dark");
-    } else {
-      setIsDark(userPrefersDark.matches);
-    }
-
-    // Listener for system theme changes
     const mediaQueryListener = (e) => {
-      if (!localStorage.getItem("theme")) {
-        setIsDark(e.matches);
-      }
+      if (!localStorage.getItem("theme")) setIsDark(e.matches);
     };
     userPrefersDark.addEventListener("change", mediaQueryListener);
     return () =>
@@ -83,8 +81,7 @@ const App = () => {
       tech: "Full-Stack Development | React, Tailwind CSS",
       description:
         "A fully responsive personal portfolio website with a modern and clean design, showcasing a collection of my projects and skills.",
-      viewLink:
-        "https://my-portfolio-eight-khaki-76.vercel.app/",
+      viewLink: "https://my-portfolio-eight-khaki-76.vercel.app/",
       githubLink: "https://github.com/YashrajMishra98/My-Portfolio",
     },
     {
