@@ -77,6 +77,34 @@ const App = () => {
 
   const projectsData = [
     {
+<<<<<<< HEAD
+=======
+      title: "Rainfall Predictor Project",
+      tech: "Full-Stack Development + Machine Learning | React, Tailwind CSS, Flask, Python, scikit-learn",
+      description:
+        "A machine learning project that predicts rainfall using historical weather data, featuring a user-friendly web interface built with React and Tailwind CSS.",
+      viewLink: "https://rainfall-predictor-c2m6.onrender.com/",
+      githubLink: "https://github.com/YashrajMishra98/Rainfall_Predictor.git",
+    },
+    {
+      title: "Real-Time Bus Tracker",
+      tech: "Full-Stack Development | React, Firebase Studio, OpenStreetMap API, Tailwind CSS",
+      description:
+        "A real-time bus tracking application that provides users with live location updates and estimated arrival times.",
+      viewLink: "https://bus-tracking-system-final.vercel.app/",
+      githubLink:
+        "https://github.com/YashrajMishra98/Bus-Tracking-System-Final-.git",
+    },
+    {
+      title: "AI-Powered GPS Map-Matching & Road Classification System",
+      tech: "Machine Learning | Streamlit, GeoPandas, scikit-learn, Python, geospatial ML pipeline with OSMnx",
+      description:
+        "An AI-powered system for GPS map-matching and road classification, utilizing advanced machine learning techniques and geospatial data processing.",
+      githubLink:
+        "https://github.com/YashrajMishra98/OSRM_Map_Matching_Model.git",
+    },
+    {
+>>>>>>> master
       title: "Portfolio Project",
       tech: "Full-Stack Development | React, Tailwind CSS",
       description:
