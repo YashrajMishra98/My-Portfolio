@@ -85,7 +85,7 @@ const App = () => {
       githubLink: "https://github.com/YashrajMishra98/Rainfall_Predictor.git",
     },
     {
-      title: "Real-Time Bus Tracker",
+      title: "Real-Time Bus Tracking System",
       tech: "Full-Stack Development | React, Firebase Studio, OpenStreetMap API, Tailwind CSS",
       description:
         "A real-time bus tracking application that provides users with live location updates and estimated arrival times.",
