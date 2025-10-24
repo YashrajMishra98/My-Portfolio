@@ -86,7 +86,7 @@ const App = () => {
     },
     {
       title: "Real-Time Bus Tracking System",
-      tech: "Full-Stack Development | React, Firebase Studio, OpenStreetMap API, Tailwind CSS",
+      tech: "Full-Stack Development | React, Firebase Studio Database, OpenStreetMap API, Tailwind CSS",
       description:
         "A real-time bus tracking application that provides users with live location updates and estimated arrival times.",
       viewLink: "https://bus-tracking-system-final.vercel.app/",
