@@ -77,8 +77,6 @@ const App = () => {
 
   const projectsData = [
     {
-<<<<<<< HEAD
-=======
       title: "Rainfall Predictor Project",
       tech: "Full-Stack Development + Machine Learning | React, Tailwind CSS, Flask, Python, scikit-learn",
       description:
@@ -104,7 +102,6 @@ const App = () => {
         "https://github.com/YashrajMishra98/OSRM_Map_Matching_Model.git",
     },
     {
->>>>>>> master
       title: "Portfolio Project",
       tech: "Full-Stack Development | React, Tailwind CSS",
       description:
