@@ -94,8 +94,8 @@ const App = () => {
         "https://github.com/YashrajMishra98/Bus-Tracking-System-Final-.git",
     },
     {
-      title: "AI-Powered GPS Map-Matching & Road Classification System",
-      tech: "Machine Learning | Streamlit, GeoPandas, scikit-learn, Python, geospatial ML pipeline with OSMnx",
+      title: "AI-Powered GPS Map-Matching & Road Classifier",
+      tech: "Machine Learning | Streamlit, GeoPandas, scikit-learn, Python",
       description:
         "An AI-powered system for GPS map-matching and road classification, utilizing advanced machine learning techniques and geospatial data processing.",
       githubLink:
